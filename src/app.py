@@ -2,6 +2,7 @@ from os import name
 from flask import Flask, request, jsonify
 from flask_mysqldb import MySQL
 
+
 app = Flask(__name__)
 
 app.config['MYSQL_HOST'] = 'birvxmqrxnbzpdvm0ogz-mysql.services.clever-cloud.com'
@@ -102,4 +103,4 @@ def eliminar_producto(id):
 
 
 if __name__ == '__main__':
-    app.run(port=4000, debug=True)
+    app.run(port=4000, debug=False)
